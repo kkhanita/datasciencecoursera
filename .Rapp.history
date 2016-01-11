@@ -1,0 +1,162 @@
+"system("defaults write org.R-project.R force.LANG en_US.UTF-8")
+"system("org.R-project.R force.LANG en_US.UTF-8")"
+x <- 1:4
+y <-2:3
+x+y
+x <- c(3, 5, 1, 10, 12, 6)
+x[x < 6] <- 0
+x
+x <- c(3, 5, 1, 10, 12, 6)
+x[x %in% 1:5] <- 0
+x
+x <- c(3, 5, 1, 10, 12, 6)
+x[x < 6] == 0
+x[x == 0] <- 6
+x
+clear
+help
+help clear
+clrscr
+x<-1
+print(x)
+x
+msg<-"Hello"
+print(msg)
+msg
+x<-1:20
+x
+x<-c(0.5, 0.6)
+x
+c
+x<-c(1.7,"c")
+x
+y<-c("a",TRUE)
+y
+y<-c(TRUE,"2")
+y
+x<-0:6
+x
+class(x)
+as.numeric(x)
+as.logocal(x)
+as.logical(x)
+as.complex(x)
+x<-list(1,"a",TRUE,1+4i)
+x
+m<-matrix(nrow=2,ncol=3)
+m
+dim(m)
+attributes(m)
+m<-matrix(1:6,nrow=2,ncol=3)
+m
+n<-matrix(7:12,nrow=2,ncol=3)
+n
+m*n
+m+n
+m<-1:10
+dim(m,2,3)
+m<-matrix(1:6,nrow=2,ncol=3)
+bind(m,n)
+cbind(m,n)
+help lm()
+help lm
+lm()
+x<-factor(c("yes","yes","no","yes","no"), levels=c("yes","no"))
+x
+table(x)
+unclass(x)
+mean(x)
+mean(m)
+m
+m<5==0
+x
+x<-c(1,2,NA,10,3)
+is.na(x)
+is.nan(x)
+x<-c(1,2,NA,NaN,3)
+is.na(x)
+is.nan(x)
+x<-0
+x
+x<-data.frame(foo=1:4)
+x
+names(x)
+read.csv
+read.table(file="hw1_data.csv")
+pwd
+ls
+cwd()
+cwd
+dir
+read.table(hw1_data.csv)
+x<-list(foo=1:4, bar=0.6)
+x[1]
+x[2]
+x$bar
+x$foo
+x["bar"]
+name<-"bar"
+name
+x[[name]]
+y<-list(x,baz="hello")
+y
+x<-null
+y
+y<-x,list(baz="hello")
+y<-(x,list(baz="hello"))
+y<-[x,list(baz="hello")]
+x$foo
+x[["foo"]]
+x[["foo",exact=FALSE]]
+x[["fo",exact=FALSE]]
+x[["foo",exact=FALSE]]
+x<-c(1,2,NA,4,NA,5)
+bad<-is.na(x)
+x[!bad]
+data
+pwd
+airquality<-read.table("hw1_data.csv")
+airquality<-read.table("hw1_data.csv")
+airquality[1:6, ]
+good<-complete.cases(airquality)
+airquality[good, ][1:6, ]
+airquality[good, ],[1:6, ]
+airquality[good,][1:6,]
+airquality[1:6, 3]
+airquality[1:6, 1:7]
+airquality
+x<-c(1,3,5)
+x
+y<-c(3,2,10)
+rbind(x,y)
+x<-c(1,3,a)
+x <- list(2, "a", "b", TRUE)
+x[[2]]
+x <- 1:4
+y<-2:3
+x+y
+x <- c(17, 14, 4, 5, 13, 12, 10)
+x[x>10]<-4
+x
+x <- c(17, 14, 4, 5, 13, 12, 10)
+x[x>10]==4
+x
+airquality[1:2,]
+airquality[1:3,]
+airquality[151:153,]
+airquality[good][151:153,]
+airquality[150:154,]
+airquality[48,]
+airquality[47,]
+good
+bad
+missimg<-is.na(airquality)
+missing
+missimg
+missingOzone<-is.na(airquality[ ,0])
+missingOzone
+missingOzone<-is.na(airquality[ ,1])
+missingOzone
+x<-1:4
+y<-2
+x+y
